@@ -1,0 +1,204 @@
+/* Modern Theme Colors */
+:root {
+    --primary: #2E3B55;
+    --secondary: #4CAF50;
+    --background: #1E1E1E;
+    --text: #E0E0E0;
+    --accent: #FF6B6B;
+    --card-bg: #2D2D2D;
+    --success: #28A745;
+    --warning: #FFC107;
+    --danger: #DC3545;
+    --chart-bg: #2D2D2D;
+    --header-bg: #1A2332;
+}
+
+/* Global Styles */
+.stApp {
+    background-color: var(--background);
+}
+
+/* Header Styling */
+.stHeader {
+    background-color: var(--primary);
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Card Styling */
+.sport-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sport-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+    background-color: #383838;
+}
+
+/* Text Colors */
+h1, h2, h3, h4, h5, h6, p, li, span, div {
+    color: var(--text) !important;
+}
+
+/* DataFrames and Tables */
+.dataframe {
+    background-color: var(--card-bg) !important;
+    color: var(--text) !important;
+}
+
+.dataframe th {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+.dataframe td {
+    color: var(--text) !important;
+}
+
+/* Metrics */
+[data-testid="stMetricValue"] {
+    color: var(--text) !important;
+}
+
+[data-testid="stMetricLabel"] {
+    color: var(--text) !important;
+}
+
+/* Plotly Charts */
+.js-plotly-plot {
+    background-color: var(--chart-bg) !important;
+}
+
+.js-plotly-plot .plotly .main-svg {
+    background-color: var(--chart-bg) !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--header-bg) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Info boxes */
+.stAlert {
+    background-color: var(--card-bg) !important;
+    color: var(--text) !important;
+}
+
+/* Header */
+.stHeader {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--header-bg) 100%) !important;
+    padding: 2rem !important;
+    margin-bottom: 2rem !important;
+    border-radius: 10px !important;
+}
+
+/* Sport Selection Button Styling */
+.stButton > button {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.stButton > button:hover {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.sport-card img {
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.stButton button {
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    border: none;
+    transition: background-color 0.2s;
+}
+
+.stButton button:hover {
+    background-color: #1a237e;
+}
+
+/* Metrics and KPI Styling */
+.stMetric {
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styling */
+.stDataFrame {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Chart Styling */
+.stPlot {
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Input Styling */
+.stTextInput input, .stNumberInput input, .stSelectbox select {
+    border-radius: 6px;
+    border: 1px solid #E0E0E0;
+    padding: 0.5rem;
+}
+
+/* Success/Error Message Styling */
+.success-message {
+    background-color: var(--success);
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.error-message {
+    background-color: var(--danger);
+    color: white;
+    padding: 1rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .sport-card {
+        margin-bottom: 1rem;
+    }
+    
+    .stHeader {
+        padding: 1rem 0;
+    }
+}
